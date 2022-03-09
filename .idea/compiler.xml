@@ -7,11 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SuiteCRMTestProject" />
-        <module name="qtaf-suitecrm-tests" />
+        <module name="QyteraPageProject" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="qtaf-suitecrm-tests" target="17" />
+      <module name="QyteraPageProject" target="17" />
       <module name="SuiteCRMTestProject" target="1.8" />
     </bytecodeTargetLevel>
   </component>

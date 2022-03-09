@@ -3,15 +3,21 @@ package de.qytera.suite_crm.page_objects;
 import de.qytera.qtaf.core.QtafFactory;
 import de.qytera.qtaf.core.config.entity.ConfigMap;
 import de.qytera.qtaf.core.guice.annotations.Step;
-import de.qytera.suite_crm.SuiteCRMTestContext;
+import de.qytera.suite_crm.TestContext;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 
+public class QyteraPO extends TestContext {
+    public static final By solutions = By.xpath("//a[contains(text(),'Lösungen')]");
+    public static final By testautomatisation = By.xpath("//body/div[@id='page-wrapper']/div[@id='page']/div[@id='nav-wrapper']/div[1]/div[1]/nav[1]/ul[1]/li[2]/ul[1]/li[2]/a[1]");
 
 
-
-public class QyteraPO extends SuiteCRMTestContext {
-    public static final By solutions = By.id("menu-438-1");
 
     @Step(
             name = "Go to Qytera main page",
@@ -26,11 +32,29 @@ public class QyteraPO extends SuiteCRMTestContext {
     }
 
     @Step(
-            name ="bla",
-            description = "blabla"
+            name ="Select Lösungen",
+            description = "klick Lösungen"
     )
     public void goToSolutions(){
-        driver.findElement(solutions).isDisplayed();
+
+        Actions builder = new Actions(driver);
+        WebElement element = driver.findElement(solutions);
+        builder.moveToElement(element).build().perform();
+
+        //driver.findElement(solutions).click();
+    }
+
+    @Step(
+            name ="Select Testautomatisierung",
+            description = "klick Testautomatisierung"
+    )
+
+    public void selectTestautomatisation() {
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+        wait.until(ExpectedConditions.visibilityOfElementLocated(testautomatisation));
+        driver.findElement(testautomatisation).click();
     }
 
 }
