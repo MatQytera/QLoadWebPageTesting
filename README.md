@@ -38,7 +38,7 @@ Weiterhin wird ein Container für das SuiteCRM-Projekt erstellt sowie ein weiter
 
 Nun können Sie die Testfälle starten. Führen Sie hierfür folgenden Befehl aus, um die Testfälle im Selenium-Chrome-Container zu starten:
 ```bash
-$ mvn exec:java -Dexec.mainClass="de.qytera.suite_crm.TestRunner" \
+$ mvn exec:java -Dexec.mainClass="de.qytera.TestRunner" \
     -Ddriver.name="chrome-remote" \
     -DpageUrl="http://suitecrm:8080" \
     -Ddriver.remoteUrl="http://localhost:4444/wd/hub"
@@ -50,7 +50,7 @@ Für den Hostnamen des Treibers können wir weiterhin `localhost`verwenden, da d
 Möchten Sie mit Firefox anstelle von Chrome testen ändern Sie die Parameter `driver.name` und `driver.remoteUrl` folgendermaßen:
 
 ```bash
-$ mvn exec:java -Dexec.mainClass="de.qytera.suite_crm.TestRunner" \
+$ mvn exec:java -Dexec.mainClass="de.qytera.TestRunner" \
     -Ddriver.name="firefox-remote" \
     -DpageUrl="http://suitecrm:8080" \
     -Ddriver.remoteUrl="http://localhost:4445/wd/hub"
@@ -103,7 +103,7 @@ Mehr Informationen zum Thema Port-Forwarding finden Sie hier: https://kubernetes
 Sobald die Container laufen können Sie von Ihrer lokalen Maschine aus mit folgendem Befehl die Tests starten:
 
 ```
-$ mvn exec:java -Dexec.mainClass="de.qytera.suite_crm.TestRunner" \
+$ mvn exec:java -Dexec.mainClass="de.qytera.TestRunner" \
     -Ddriver.name="chrome-remote" \
     -DpageUrl="http://suitecrm:8080" \
     -Ddriver.remoteUrl="http://localhost:4444/wd/hub"
