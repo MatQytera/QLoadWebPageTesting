@@ -1,12 +1,11 @@
-package de.qytera.suite_crm;
+package de.qytera.webpage;
 
 import de.qytera.qtaf.testng.context.QtafTestNGContext;
-import de.qytera.suite_crm.page_objects.*;
-import foo.PageObject;
+import de.qytera.webpage.page_objects.*;
 
 import javax.inject.Inject;
 
-@PageObject
+
 public class TestContext extends QtafTestNGContext {
 
 

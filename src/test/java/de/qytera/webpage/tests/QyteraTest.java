@@ -1,7 +1,7 @@
-package de.qytera.suite_crm.tests;
+package de.qytera.webpage.tests;
 
 import de.qytera.qtaf.core.config.annotations.TestFeature;
-import de.qytera.suite_crm.TestContext;
+import de.qytera.webpage.TestContext;
 import org.testng.annotations.Test;
 
 import javax.inject.Singleton;

@@ -1,10 +1,10 @@
-package de.qytera.suite_crm.page_objects;
+package de.qytera.webpage.page_objects;
 
 
 
 
 import de.qytera.qtaf.core.guice.annotations.Step;
-import de.qytera.suite_crm.TestContext;
+import de.qytera.webpage.TestContext;
 import org.openqa.selenium.By;
 
 public class CancelPO extends TestContext {
