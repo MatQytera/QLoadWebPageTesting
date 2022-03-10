@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.JavascriptExecutor;
 
 import java.time.Duration;
 
@@ -39,6 +40,7 @@ public class QyteraPO extends TestContext {
 
         Actions builder = new Actions(driver);
         WebElement element = driver.findElement(solutions);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
         builder.moveToElement(element).build().perform();
 
         //driver.findElement(solutions).click();
