@@ -16,6 +16,7 @@ public class QyteraTest extends TestContext {
     public void testCalls() throws InterruptedException {
         //Navigate to calls page
         qyteraPO.goToRootPage();
+        qyteraPO.acceptCoookieButton();
         qyteraPO.goToSolutions();
         qyteraPO.selectTestautomatisation();
         qyteraTestautomationPO.goToTestautomationTraining();
