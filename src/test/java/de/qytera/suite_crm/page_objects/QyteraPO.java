@@ -16,7 +16,7 @@ import java.time.Duration;
 public class QyteraPO extends TestContext {
     public static final By solutions = By.xpath("//a[contains(text(),'Lösungen')]");
     public static final By testautomatisation = By.xpath("//body/div[@id='page-wrapper']/div[@id='page']/div[@id='nav-wrapper']/div[1]/div[1]/nav[1]/ul[1]/li[2]/ul[1]/li[2]/a[1]");
-
+    public static final By cookieAcceptButton = By.xpath("//button[contains(text(),'OK')]");
 
 
     @Step(
@@ -55,6 +55,18 @@ public class QyteraPO extends TestContext {
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(testautomatisation));
         driver.findElement(testautomatisation).click();
+    }
+    
+     @Step(
+            name="Accept Cookies",
+            description = "Akzeptiere die cookies"
+    )
+    public void acceptCoookieButton(){
+        try {
+            driver.findElement(cookieAcceptButton).click();
+        }
+        catch (Exception e){}
+
     }
 
 }
