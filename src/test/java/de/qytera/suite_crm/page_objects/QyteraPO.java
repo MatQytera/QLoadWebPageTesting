@@ -38,12 +38,7 @@ public class QyteraPO extends TestContext {
     )
     public void goToSolutions(){
 
-        Actions builder = new Actions(driver);
-        WebElement element = driver.findElement(solutions);
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
-        builder.moveToElement(element).build().perform();
-
-        //driver.findElement(solutions).click();
+        driver.findElement(solutions).click();
     }
 
     @Step(
@@ -53,10 +48,8 @@ public class QyteraPO extends TestContext {
 
     public void selectTestautomatisation() {
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
-        wait.until(ExpectedConditions.visibilityOfElementLocated(testautomatisation));
-        driver.findElement(testautomatisation).click();
+       driver.get("https://www.qytera.de/testing-solutions/testautomatisierung");
+       
     }
     
      @Step(
