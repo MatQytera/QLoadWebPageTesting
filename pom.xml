@@ -16,16 +16,9 @@
     <dependencies>
         <dependency>
             <groupId>de.qytera.qtaf</groupId>
-            <artifactId>qtaf</artifactId>
-            <version>2022-03-08-SNAPSHOT-01</version>
+            <artifactId>qtaf-core</artifactId>
+            <version>0.0.5</version>
         </dependency>
-
-        <dependency>
-            <groupId>de.qytera.qtaf</groupId>
-            <artifactId>qtaf-allure-plugin</artifactId>
-            <version>2022-03-08-SNAPSHOT-01</version>
-        </dependency>
-
         <dependency>
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
