@@ -38,7 +38,7 @@ public class QyteraPO extends TestContext {
     )
     public void goToSolutions(){
 
-        driver.findElement(solutions).click();
+        driver.findElement(solutions).isDisplayed();
     }
 
     @Step(
