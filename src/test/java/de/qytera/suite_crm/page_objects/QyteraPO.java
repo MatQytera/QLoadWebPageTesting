@@ -28,7 +28,7 @@ public class QyteraPO extends TestContext {
         String url = configMap.getString("pageUrl", "https://www.qytera.de");
         System.out.println("Page URL: " + url);
         driver.get(url);
-        driver.manage().window().maximize();
+        //driver.manage().window().maximize();
     }
 
     @Step(
