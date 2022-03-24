@@ -18,6 +18,7 @@ public class QyteraTest extends TestContext {
         qyteraPO.goToRootPage();
         qyteraPO.goToSolutions();
         qyteraPO.selectTestautomatisation();
+        qyteraTestautomationPO.scrollDownPage();
         qyteraTestautomationPO.goToTestautomationTraining();
         qyteraTestautomationRegistrationOptionsPO.goToTestautomationRegistration();
         eventbritePO.goToTestautomationTraining();

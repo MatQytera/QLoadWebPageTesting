@@ -18,7 +18,7 @@ public class QyteraTestautomationRegistrationOptionsPO extends TestContext {
     public void goToTestautomationRegistration() throws InterruptedException {
 
         driver.findElement(testautomationRegistration).click();
-      //  Thread.sleep(2000);
+
 
     }
 

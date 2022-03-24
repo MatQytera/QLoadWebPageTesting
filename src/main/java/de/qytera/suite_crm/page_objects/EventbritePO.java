@@ -39,13 +39,13 @@ public class EventbritePO extends TestContext {
     }
 
 
-    public void acceptCoookieButton() {
+   /* public void acceptCoookieButton() {
 
         try {
             driver.findElement(cookieAcceptButton).click();
         }
         catch (Exception e){}
-    }
+    }*/
 
 
 }
