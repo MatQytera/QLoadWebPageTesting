@@ -8,9 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="SuiteCRMTestProject" />
         <module name="QyteraPageProject" />
+        <module name="qyterademoproject" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="qyterademoproject" target="17" />
       <module name="QyteraPageProject" target="17" />
       <module name="SuiteCRMTestProject" target="1.8" />
     </bytecodeTargetLevel>

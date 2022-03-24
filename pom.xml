@@ -45,7 +45,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>/</classpathPrefix>
-                            <mainClass>de.qytera.suite_crm.TestRunner</mainClass>
+                            <mainClass>de.qytera.webpage.TestRunner</mainClass>
                         </manifest>
                     </archive>
                     <finalName>app</finalName>
@@ -56,7 +56,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>de.qytera.suite_crm.TestRunner</mainClass>
+                            <mainClass>de.qytera.webpage.TestRunner</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

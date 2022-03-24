@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/QyteraPageProject.iml" filepath="$PROJECT_DIR$/.idea/QyteraPageProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/qyterademoproject.iml" filepath="$PROJECT_DIR$/.idea/qyterademoproject.iml" />
     </modules>
   </component>
 </project>

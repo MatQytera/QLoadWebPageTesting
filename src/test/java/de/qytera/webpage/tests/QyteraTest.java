@@ -1,7 +1,7 @@
-package de.qytera.suite_crm.tests;
+package de.qytera.webpage.tests;
 
 import de.qytera.qtaf.core.config.annotations.TestFeature;
-import de.qytera.suite_crm.TestContext;
+import de.qytera.webpage.TestContext;
 import org.testng.annotations.Test;
 
 import javax.inject.Singleton;
@@ -16,10 +16,13 @@ public class QyteraTest extends TestContext {
     public void testCalls() throws InterruptedException {
         //Navigate to calls page
         qyteraPO.goToRootPage();
+        qyteraPO.acceptCoookieButton();
         qyteraPO.goToSolutions();
         qyteraPO.selectTestautomatisation();
+        qyteraTestautomationPO.acceptCoookieButton();
         qyteraTestautomationPO.goToTestautomationTraining();
         qyteraTestautomationRegistrationOptionsPO.goToTestautomationRegistration();
+        eventbritePO.acceptCoookieButton();
         eventbritePO.goToTestautomationTraining();
         eventbriteNumberOptionPO.eventbriteNumberOption();
         eventbriteRegisterPO.fillFirstnameField();
