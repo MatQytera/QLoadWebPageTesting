@@ -1,4 +1,4 @@
-package de.qytera.suite_crm;
+package de.qytera.webpage;
 
 import de.qytera.qtaf.testng.QtafTestNGRunner;
 import de.qytera.qtaf.testng.event_listener.TestNGEventListener;

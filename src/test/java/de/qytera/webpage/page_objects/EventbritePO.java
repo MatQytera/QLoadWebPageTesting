@@ -1,8 +1,8 @@
-package de.qytera.suite_crm.page_objects;
+package de.qytera.webpage.page_objects;
 
 
 import de.qytera.qtaf.core.guice.annotations.Step;
-import de.qytera.suite_crm.TestContext;
+import de.qytera.webpage.TestContext;
 import org.openqa.selenium.By;
 
 import java.util.ArrayList;
@@ -12,8 +12,8 @@ import static de.qytera.qtaf.core.QtafFactory.getWebDriver;
 
 public class EventbritePO extends TestContext {
     public static final By testautomationTraining = By.xpath("//button[@id='eventbrite-widget-modal-trigger-173243735677']");
+   // public static final By cookieAcceptButton = By.xpath("//button[@id='_evidon-accept-button']");
     public static final By cookieAcceptButton = By.xpath("//*[@id=\"_evidon-accept-button\"]");
-
 
     @Step(
             name ="Select Tickets",
@@ -37,15 +37,17 @@ public class EventbritePO extends TestContext {
        // Thread.sleep(2000);
         //driver.findElement(solutions).click();
     }
-
-
-   /* public void acceptCoookieButton() {
-
+    @Step(
+            name="Accept Cookies",
+            description = "Akzeptiere die cookies"
+    )
+    public void acceptCoookieButton(){
         try {
             driver.findElement(cookieAcceptButton).click();
         }
         catch (Exception e){}
-    }*/
+
+    }
 
 
 }
