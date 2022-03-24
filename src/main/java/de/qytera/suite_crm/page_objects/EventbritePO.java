@@ -12,7 +12,7 @@ import static de.qytera.qtaf.core.QtafFactory.getWebDriver;
 
 public class EventbritePO extends TestContext {
     public static final By testautomationTraining = By.xpath("//button[@id='eventbrite-widget-modal-trigger-173243735677']");
-
+    public static final By cookieAcceptButton = By.xpath("//*[@id=\"_evidon-accept-button\"]");
 
 
     @Step(
@@ -38,6 +38,14 @@ public class EventbritePO extends TestContext {
         //driver.findElement(solutions).click();
     }
 
+
+    public void acceptCoookieButton() {
+
+        try {
+            driver.findElement(cookieAcceptButton).click();
+        }
+        catch (Exception e){}
+    }
 
 
 }

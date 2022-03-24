@@ -16,9 +16,9 @@ public class TestRunner extends QtafTestNGRunner {
 
     @Test
     public void run(){
-        TestNG testNG = new TestNG();
-        testNG.setListenerClasses(Collections.singletonList(TestNGEventListener.class));
-        testNG.setTestClasses(new Class[]{TestNGFactory.class});
-        testNG.run();
+       // TestNG testNG = new TestNG();
+       // testNG.setListenerClasses(Collections.singletonList(TestNGEventListener.class));
+       // testNG.setTestClasses(new Class[]{TestNGFactory.class});
+       // testNG.run();
     }
 }

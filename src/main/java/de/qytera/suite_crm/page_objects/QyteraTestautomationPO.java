@@ -8,6 +8,15 @@ import org.openqa.selenium.By;
 
 public class QyteraTestautomationPO extends TestContext {
     public static final By testautomationTraining = By.xpath("//a[contains(text(),'ISTQB Advanced Level Test Automation Engineer')]");
+    public static final By cookieAcceptButton = By.xpath("//button[contains(text(),'OK')]");
+
+
+    public void acceptCoookieButton() {
+        try {
+            driver.findElement(cookieAcceptButton).click();
+        }
+        catch (Exception e){}
+    }
 
 
 

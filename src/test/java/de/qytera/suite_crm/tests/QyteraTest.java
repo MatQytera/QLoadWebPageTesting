@@ -19,6 +19,7 @@ public class QyteraTest extends TestContext {
         qyteraPO.acceptCoookieButton();
         qyteraPO.goToSolutions();
         qyteraPO.selectTestautomatisation();
+        qyteraTestautomationPO.acceptCoookieButton();
         qyteraTestautomationPO.goToTestautomationTraining();
         qyteraTestautomationRegistrationOptionsPO.goToTestautomationRegistration();
         eventbritePO.acceptCoookieButton();
