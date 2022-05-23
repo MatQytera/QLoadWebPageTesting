@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SuiteCRMTestProject" />
-        <module name="QyteraPageProject" />
         <module name="qyterademoproject" />
       </profile>
     </annotationProcessing>

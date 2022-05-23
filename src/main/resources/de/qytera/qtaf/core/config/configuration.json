@@ -1,10 +1,10 @@
 {
-  "pageUrl": "http://qytera.de",
+  "pageUrl": "http://192.168.178.120:8081/app/index.html",
   "tests":{
     "suite":{
       "name":""
     },
-    "package":"de.qytera.suite_crm.tests"
+    "package":"de.qytera.webpage.tests"
   },
   "driver":{
     "name": "chrome",

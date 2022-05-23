@@ -10,27 +10,8 @@ public class TestContext extends QtafTestNGContext {
 
 
     @Inject
-    protected QyteraPO qyteraPO;
+    protected QLoadPO qLoadPO;
 
     @Inject
-    protected QyteraTestautomationPO qyteraTestautomationPO;
-
-    /*@Inject
-    protected QyteraTestmanagmentPO qyteraTestmanagmentPO;
-*/
-    @Inject
-    protected QyteraTestautomationRegistrationOptionsPO qyteraTestautomationRegistrationOptionsPO;
-
-    @Inject
-    protected  EventbritePO eventbritePO;
-
-    @Inject
-    protected  EventbriteNumberOptionPO eventbriteNumberOptionPO;
-
-    @Inject
-    protected  EventbriteRegisterPO eventbriteRegisterPO;
-
-    @Inject
-    protected  CancelPO cancelPO;
-
+    protected UpLoadPO upLoadPO;
 }
