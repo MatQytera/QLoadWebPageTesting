@@ -11,9 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="qyterademoproject" target="17" />
-      <module name="QyteraPageProject" target="17" />
-      <module name="SuiteCRMTestProject" target="1.8" />
+      <module name="qyterademoproject" target="15" />
     </bytecodeTargetLevel>
   </component>
 </project>

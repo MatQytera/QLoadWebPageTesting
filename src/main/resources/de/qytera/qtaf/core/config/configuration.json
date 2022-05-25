@@ -1,5 +1,5 @@
 {
-  "pageUrl": "http://192.168.178.120:8081/app/index.html",
+  "pageUrl": "http://qload-api.eba-9gsnxmph.eu-central-1.elasticbeanstalk.com/",
   "tests":{
     "suite":{
       "name":""

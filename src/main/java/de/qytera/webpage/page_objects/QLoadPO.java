@@ -5,16 +5,10 @@ import de.qytera.qtaf.core.config.entity.ConfigMap;
 import de.qytera.qtaf.core.guice.annotations.Step;
 import de.qytera.webpage.TestContext;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 
 public class QLoadPO extends TestContext {
-    //public static final By emailaddressefield = By.xpath("//*[@id=\"exampleInputEmail1\"]");
+
     public static final By emailaddressefield = By.xpath("//input[@id='exampleInputEmail1']");
     String email =  "jane.doe";
 
@@ -22,8 +16,7 @@ public class QLoadPO extends TestContext {
     String password = "Test_1234";
 
     public static final By submit = By.xpath("//button[@type='submit']");
-//button[@type='submit']
-    //input[@id='exampleInputEmail1']
+
 
     @Step(
             name = "Go to QLoad Login page",
@@ -31,7 +24,7 @@ public class QLoadPO extends TestContext {
     )
     public void goToRootPage() {
         ConfigMap configMap = QtafFactory.getConfiguration();
-        String url = configMap.getString("pageUrl","http://192.168.178.120:8081/app/index.html");
+        String url = configMap.getString("pageUrl","http://qload-api.eba-9gsnxmph.eu-central-1.elasticbeanstalk.com/");
         System.out.println("Page URL: " + url);
         driver.get(url);
         driver.manage().window().maximize();
@@ -64,9 +57,6 @@ public class QLoadPO extends TestContext {
 
     public void submitClick() {
 
-       // WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
-        //wait.until(ExpectedConditions.visibilityOfElementLocated(testautomatisation));
         driver.findElement(submit).click();
     }
 
