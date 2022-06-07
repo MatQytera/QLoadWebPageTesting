@@ -13,5 +13,8 @@ public class TestContext extends QtafTestNGContext {
     protected QLoadPO qLoadPO;
 
     @Inject
-    protected UpLoadPO upLoadPO;
+    protected UpLoadQyteraWebsitePO upLoadQyteraWebsitePO;
+
+    @Inject
+    protected UpLoadSuiteCRMPO upLoadSuiteCRMPO;
 }

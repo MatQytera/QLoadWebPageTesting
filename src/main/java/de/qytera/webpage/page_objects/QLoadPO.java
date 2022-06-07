@@ -9,10 +9,10 @@ import org.openqa.selenium.By;
 
 public class QLoadPO extends TestContext {
 
-    public static final By emailaddressefield = By.xpath("//input[@id='exampleInputEmail1']");
+    public static final By emailaddressefield = By.xpath("//input[@id='username_input']");
     String email =  "jane.doe";
 
-    public static final By passwordfield = By.xpath("//*[@id=\"exampleInputPassword1\"]");
+    public static final By passwordfield = By.xpath("//*[@id=\"password_input\"]");
     String password = "Test_1234";
 
     public static final By submit = By.xpath("//button[@type='submit']");
@@ -24,13 +24,13 @@ public class QLoadPO extends TestContext {
     )
     public void goToRootPage() {
         ConfigMap configMap = QtafFactory.getConfiguration();
-        String url = configMap.getString("pageUrl","http://qload-api.eba-9gsnxmph.eu-central-1.elasticbeanstalk.com/");
+        String url = configMap.getString("pageUrl","http://qload-api.eba-tpngisez.eu-central-1.elasticbeanstalk.com/app/index.html");
         System.out.println("Page URL: " + url);
         driver.get(url);
         driver.manage().window().maximize();
     }
 
-    @Step(
+   @Step(
             name ="insert Email address",
             description = "fill out email address"
     )
@@ -49,7 +49,6 @@ public class QLoadPO extends TestContext {
         driver.findElement(passwordfield).sendKeys(password);
 
     }
-
     @Step(
             name ="Select submit buttom",
             description = "click password"
